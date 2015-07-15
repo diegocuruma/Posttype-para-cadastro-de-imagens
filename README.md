@@ -37,8 +37,6 @@ PARTE CÓD:
 
 
 <ul>
-<!--while do post - -->
-<!--posttype 'produtos' pode haver vários post's, então captura-se a ID da page que queira trazer-->
 <?php $fotos = new WP_Query ( array ( 'post_type' => 'produto','page_id'=>coloque a id da pagina aqui));
 while($fotos->have_posts()) : $fotos->the_post();
 ?>
@@ -117,15 +115,3 @@ PARTE CÓD:
 ## Autores
 
 * Diego Curuma [Link's'](https://www.github.com/diegocuruma, https://www.behance.net/diegocuruma)
-* Isabela [Link](https://www.link)
-* Jonas Sousa [Behance](https://www.behance.net/onasousa)
-* Allef Bruno [Behance](https://www.behance.net/)
-
-## Referências 
-
-* [Sass](http://sass-lang.com/)
-* [Compass](http://compass-style.org/)
-* [Grunt](http://gruntjs.com/)
-* [Normalize CSS](http://necolas.github.io/normalize.css/)
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
