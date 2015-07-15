@@ -114,4 +114,6 @@ PARTE CÓD:
 
 ## Autores
 
-* Diego Curuma [Link's'](https://www.github.com/diegocuruma, https://www.behance.net/diegocuruma)
+* Diego Curuma
+* https://www.behance.net/diegocuruma
+* http://codepen.io/curuma
