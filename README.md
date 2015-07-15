@@ -1,4 +1,4 @@
-# TEMA
+# Posttype para cadastro de imagens (Plugin)
 
 ## O que é?
 
@@ -87,7 +87,7 @@ Se voce nao possui o Plugin Advanced Custom Field, faça o seguinte.
 PARTE CÓD:
 
 1 - Insira o código: 
-## Exemplo de uso em um carrousel:
+//<ul id="logo" class="owl-carousel">				        
 <!--
 <ul id="logo" class="owl-carousel">				        
 <?php $lg = New wp_query(array('post_type' => 'logo', 'orderby' => 'title', 'order' => 'asc' , 'showposts' => -1));
