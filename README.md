@@ -36,24 +36,22 @@ PARTE CÓD:
 ## Exemplo de uso em um carrousel:
 
 
-<ul>
+<!--<ul>
 <?php $fotos = new WP_Query ( array ( 'post_type' => 'produto','page_id'=>coloque a id da pagina aqui));
 while($fotos->have_posts()) : $fotos->the_post();
 ?>
-
-    <!--if dos campos pra cadastrar as imagens-->
     <?php 
         if( have_rows('listagem') ):
         while ( have_rows('listagem') ) : the_row();
 
     ?>
         <li>  
-          <!--if pra ver se tem link ou nao-->                         
+                                
             <?php if(get_sub_field('links') != '') : ?>
             <a href="<?php the_sub_field('links'); ?>"  class="pure-u-md-24-24" title="Acesse: <?php the_sub_field('links'); ?>">
                 <img src="<?php the_sub_field('imagens'); ?>" alt="" class="">
             </a>
-             <!--se nao tiver link joga a imagem-->  
+          
             <?php else : ?>
             <img src="<?php the_sub_field('imagens'); ?>" alt="<?php the_sub_field('links'); ?>" class="">
 
@@ -70,6 +68,7 @@ while($fotos->have_posts()) : $fotos->the_post();
   <a class="btn prev img_rep">Previous</a>
   <a class="btn next img_rep">Next</a>
 </div>
+-->
 
 2 - Pronto!
 
@@ -89,6 +88,7 @@ PARTE CÓD:
 
 1 - Insira o código: 
 ## Exemplo de uso em um carrousel:
+<!--
 <ul id="logo" class="owl-carousel">				        
 <?php $lg = New wp_query(array('post_type' => 'logo', 'orderby' => 'title', 'order' => 'asc' , 'showposts' => -1));
     while($lg -> have_posts()): $lg -> the_post();
@@ -104,7 +104,7 @@ PARTE CÓD:
 </ul>
 <a class="prev1 img_rep">Previous</a>
 <a class="next1 img_rep">Next</a>
-
+-->
 
 
 
