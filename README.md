@@ -87,7 +87,11 @@ Se voce nao possui o Plugin Advanced Custom Field, faça o seguinte.
 PARTE CÓD:
 
 1 - Insira o código: 
-//<ul id="logo" class="owl-carousel">				        
+//<ul id="logo" class="owl-carousel">		
+//<?php $lg = New wp_query(array('post_type' => 'logo', 'orderby' => 'title', 'order' => 'asc' , 'showposts' => -1));
+    while($lg -> have_posts()): $lg -> the_post();
+
+?> 
 <!--
 <ul id="logo" class="owl-carousel">				        
 <?php $lg = New wp_query(array('post_type' => 'logo', 'orderby' => 'title', 'order' => 'asc' , 'showposts' => -1));
